@@ -1,0 +1,21 @@
+# OpenTensio local/private configuration
+config.h
+**/config.h
+
+# Arduino build artifacts
+build/
+*.bin
+*.elf
+*.map
+*.hex
+*.eep
+*.lst
+*.sym
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Dossier de développement local
+/dev/
