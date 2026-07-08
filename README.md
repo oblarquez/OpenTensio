@@ -1,4 +1,3 @@
-````markdown
 # OpenTensio
 
 **Open-source soil water tension monitoring**
@@ -163,4 +162,3 @@ No subscriptions.
 No cloud dependency.
 
 Just open hardware, open software and open protocols.
-````
