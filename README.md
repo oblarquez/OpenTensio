@@ -1,15 +1,11 @@
 ````markdown
 # OpenTensio
 
-<p align="center">
-
 **Open-source soil water tension monitoring**
 
 *ESP32 • LoRa • Wi-Fi • MQTT • Home Assistant*
 
 No cloud • No subscription • Your data stays yours
-
-</p>
 
 ---
 
