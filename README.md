@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/opentensio-logo.png" alt="OpenTensio logo" width="420">
+</p>
+
 # OpenTensio
 
 **Open-source soil water tension monitoring**
