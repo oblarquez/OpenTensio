@@ -52,11 +52,15 @@ La tension du sol exprime l'effort que doivent fournir les racines pour extraire
 **La page web locale** `http://opentensio.local` s'ouvre depuis n'importe quel téléphone ou ordinateur connecté au Wi-Fi du Display :
 
 - **Nodes** : dernières valeurs, courbes sur 24 h, 7 jours, 30 jours ou un an, export CSV ;
+- **Météo** : température et humidité de l'air sur les mêmes périodes ;
 - **Configuration** : Wi-Fi de la ferme, MQTT (Home Assistant, Node-RED…), adresse MAC ;
-- **Alertes** : abonnement sur le téléphone et seuils par sonde ;
-- **Météo** *(en cours d'intégration)* : température et humidité de l'air à la parcelle, courbes sur 24 h, 7 jours, 30 jours ou un an, utiles notamment pour repérer les gelées.
+- **Alertes** : abonnement sur le téléphone et seuils par sonde.
 
 Le Display crée son propre Wi-Fi : aucune connexion Internet n'est nécessaire pour consulter ses mesures. Le Wi-Fi de la ferme est facultatif ; il sert à l'heure réseau et aux alertes.
+
+## Météo à la parcelle
+
+Chaque Node est aussi une petite station météo. Il mesure la température et l'humidité de l'air sous abri. L'onglet Météo de la page web présente les courbes sur 24 heures, 7 jours, 30 jours et un an, avec l'historique complet. Il permet de suivre les épisodes de chaleur et de repérer les nuits froides, au plus près de la culture.
 
 ## Alertes sur le téléphone
 
@@ -66,15 +70,16 @@ Les notifications passent par [ntfy](https://ntfy.sh), une application libre et 
 
 ## Principes
 
-- **Ouvert** : le code source et les formats de données sont ouverts ; le fonctionnement peut être audité, adapté ou amélioré.
-- **Documenté** : fonctionnement et schéma documentés.
-- **Local par conception** : mesure, transmission, affichage, historique et alertes fonctionnent sur l'exploitation, sans cloud.
-- **Vos données** : historique conservé chez vous, en fichiers CSV documentés et librement exportables.
-- **Un outil que vous maîtrisez** : rien à payer chaque année pour accéder à ses propres mesures.
+Une technologie ouverte plutôt qu'un service fermé. Le code source et les formats de données sont ouverts : le fonctionnement peut être audité, adapté ou amélioré.
 
-## Évolutions en cours
+- **Logiciel libre** : les firmwares du Node, du Radio et du Display, et les formats de données, sont ouverts.
+- **Un outil que vous maîtrisez** : fonctionnement et schéma documentés ; on comprend, on répare, on fait évoluer.
+- **Local par conception** : pas de cloud imposé, tout reste utilisable sans Internet.
+- **Vos données** : fichiers CSV documentés, conservés chez vous et librement exportables.
 
-OpenTensio continue d'évoluer : de nouveaux capteurs utiles aux agriculteurs sont en cours de développement.
+## OpenTensio évolue
+
+Le logiciel s'enrichit régulièrement, et une nouvelle génération de Node est en cours de développement : davantage de sondes par point de mesure et de nouveaux capteurs utiles au suivi des cultures. Les mises à jour se font sans changer d'installation.
 
 ## Contenu du dépôt
 
@@ -144,11 +149,15 @@ Soil water tension expresses how hard roots must work to extract water. Its evol
 **The local web page** `http://opentensio.local` opens on any phone or computer connected to the Display's Wi-Fi:
 
 - **Nodes**: latest values, curves over 24 h, 7 days, 30 days or one year, CSV export;
+- **Weather**: air temperature and humidity over the same periods;
 - **Configuration**: farm Wi-Fi, MQTT (Home Assistant, Node-RED…), MAC address;
-- **Alerts**: phone subscription and per-sensor thresholds;
-- **Weather** *(being integrated)*: field air temperature and humidity, curves over 24 h to one year, useful in particular to spot frost.
+- **Alerts**: phone subscription and per-sensor thresholds.
 
 The Display creates its own Wi-Fi network: no Internet connection is needed to see your data. The farm Wi-Fi is optional and is used for network time and alerts.
+
+## Field-level weather
+
+Each Node is also a small weather station: it measures air temperature and humidity in a shield. The Weather tab of the web page shows curves over 24 hours, 7 days, 30 days and one year, with the full history. It helps follow heat episodes and spot cold nights, right next to the crop.
 
 ## Phone alerts
 
@@ -158,15 +167,16 @@ Notifications go through [ntfy](https://ntfy.sh), a free and open app for iPhone
 
 ## Principles
 
-- **Open**: source code and data formats are open; the system can be audited, adapted or improved.
-- **Documented**: operation and schematic are documented.
-- **Local by design**: measurement, transmission, display, history and alerts all run on the farm, with no cloud.
-- **Your data**: history is kept on site, in documented CSV files that can be exported freely.
-- **A tool you control**: nothing to pay each year to access your own measurements.
+An open technology rather than a closed service. Source code and data formats are open: the system can be audited, adapted or improved.
 
-## Work in progress
+- **Free software**: the Node, Radio and Display firmware and the data formats are open.
+- **A tool you control**: operation and schematic are documented; you can understand it, repair it and make it evolve.
+- **Local by design**: no mandatory cloud, everything works without Internet.
+- **Your data**: documented CSV files, kept on site and freely exportable.
 
-OpenTensio keeps evolving: new sensors useful to farmers are under development.
+## OpenTensio keeps evolving
+
+The software is improved regularly, and a new generation of Node is under development: more sensors per measurement point and new sensors useful for crop monitoring. Updates do not require changing the installation.
 
 ## Repository contents
 
